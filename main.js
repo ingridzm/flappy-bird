@@ -49,6 +49,8 @@ var main_state = {
     // If the bird is out of the world (too high or too low), call the 'restart_game' function
     if (this.bird.inWorld == false)
         this.restart_game();
+
+     this.game.physics.overlap(this.bird, this.pipes, this.restart_game, null, this); 
 },
 // make the bird jump
   jump: function(){
@@ -60,7 +62,7 @@ restart_game: function() {
     // Start the 'main' state, which restarts the game
     this.game.state.start('main');
 
-    this.game.physics.overlap(this.bird, this.pipes, this.restart_game, null, this); 
+   
 
 },
 
