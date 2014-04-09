@@ -118,9 +118,7 @@ add_row_of_pipes: function() {
 
 };
 
-// Add and start the 'main' state to start the game
-game.state.add('main', main_state);  
-game.state.start('main'); 
+
 
 
  
