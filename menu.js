@@ -34,8 +34,8 @@ var menu_state = {
         this.game.state.start('play');
     }
 
-    
+
 };
 
 
-  };
+ 
