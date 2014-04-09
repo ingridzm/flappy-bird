@@ -18,7 +18,11 @@ this.bird = this.game.add.sprite(100, 245, 'bird');
 
     var space_key = this.game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
 
-    space_key.onDown.add(this.jump, this);   
+    space_key.onDown.add(this.jump, this);  
+
+    this.game.input.onDown.add(this.jump, this); ///makes the mouse work
+
+
 
     this.pipes = game.add.group();  
     this.pipes.createMultiple(20, 'pipe');    

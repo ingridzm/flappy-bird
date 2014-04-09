@@ -5,7 +5,10 @@ var menu_state = {
 
        // Call the 'start' function when pressing the spacebar
         var space_key = this.game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
-        space_key.onDown.add(this.start, this); 
+        space_key.onDown.add(this.start, this);
+
+        this.game.input.onDown.add(this.start, this); ///makes the mouse work
+
 
         // Defining variables
         var style = {font: "30px Arial", fill: "#ffffff" };
